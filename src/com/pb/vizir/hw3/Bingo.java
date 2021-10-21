@@ -10,7 +10,6 @@ public class Bingo {
         int x = random.nextInt(101);
         int num =101;
         int attempt = 0;
-        System.out.println(x);
         System.out.println("Давайте сыграем в Bingo! Угадайте число от 0 до 100. Если игра наскучит, введите 999");
 
             while (num != x) {
