@@ -1,4 +1,5 @@
 package com.pb.vizir.hw6;
+
 import java.lang.reflect.Constructor;
 public class VetClinic {
     public static void main(String[] args) throws Exception{
@@ -18,13 +19,13 @@ public class VetClinic {
 
         //создание объекта Ветеринар через рефлексию
         Constructor constr = VeterClazz.getConstructor(new Class[]{});
-         Object obj = constr.newInstance();
-         if (obj instanceof Veterinarian)
-             for (int i = 0; i<3; i++){
-             ((Veterinarian) obj).treatAnimal(animal[i]);
-              System.out.println();
-         }
-         }
+        Object obj = constr.newInstance();
+        if (obj instanceof Veterinarian)
+            for (int i = 0; i<3; i++){
+                ((Veterinarian) obj).treatAnimal(animal[i]);
+                System.out.println();
+            }
+    }
 
 
 }
